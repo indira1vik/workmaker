@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-family: 'Saira', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url(https://wallpaperaccess.com/full/632787.jpg) no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+header{
+    padding: 2rem 2rem;
+    max-width: 800px;
+    width: 100%;
+    margin:auto;
+    margin-top: 25px;
+    background-color: white;
+    opacity: 0.65;
+    border-radius: 10px 10px 0px 0px;
+}
+
+header h1{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+input, button{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#reader{
+    display: flex;
+}
+
+#ask{
+    flex: 1 1 0%;
+    background-color:#A6D1E6;
+    padding: 1rem;
+    border-radius: 7px;
+    margin-right: 1rem;
+    color: black;
+    font-weight: 800;
+    box-shadow: 5px 5px 10px grey;
+}
+
+#ask::placeholder{
+    color: #7F5283;
+    font-weight: 200;
+}
+
+#submit{
+    color: blueviolet;
+    cursor: pointer;
+    transition: 0.4s;
+    font-weight: bold;
+}
+
+#submit:hover{
+    opacity: 0.75;
+}
+
+main{
+    flex: 1 1 0%;
+    padding: 2rem 2rem;
+    max-width: 800px;
+    width:100%;
+    margin:auto;
+    margin-bottom: 25px;
+    background-color: white;
+    opacity: 0.65;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.store h2{
+    margin-bottom: 1rem;
+    font-size: 22px;
+}
+
+#list .each-task{
+    display: flex;
+    justify-content: space-between;
+    background-color: #A5C9CA;
+    padding: 1rem;
+    border-radius: 7px;
+    margin-bottom: 1rem;
+    box-shadow: 5px 5px 10px grey;
+}
+
+#list .each-task .content .text{
+    color:black;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+}
+
+#list .each-task .content .text:not(:read-only){
+    color: darkviolet;
+}
+
+#list .each-task .actions{
+    display: flex;
+    margin: 0 -0.5rem;
+}
+
+.each-task .actions button{
+    cursor: pointer;
+    margin: 0 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.delete{
+    color: crimson;
+}
+
+.edit{
+    color: blueviolet;
+}
+
+@media screen and (max-width: 800px){
+    body{
+        max-width: 95%;
+        text-align: center;
+        margin: auto;
+    }
+}
